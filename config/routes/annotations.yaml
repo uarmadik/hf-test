@@ -2,9 +2,9 @@
 #    resource: ../../src/Controller/
 #    type: annotation
 
-web_controller:
-    resource: ../../src/Controller/Web/
-    type: annotation
+#web_controller:
+#    resource: ../../src/Controller/Web/
+#    type: annotation
 rest_controller:
     resource: ../../src/Controller/Rest/
     type: annotation
