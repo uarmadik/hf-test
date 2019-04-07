@@ -1,0 +1,14 @@
+DirectoryIndex public/index.php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* public/index.php [L]
+
+<IfModule mod_headers.c>
+  Header set Cache-Control "no-store, no-cache"
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "now"
+</IfModule>
